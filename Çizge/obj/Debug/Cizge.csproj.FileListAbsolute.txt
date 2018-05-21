@@ -1,0 +1,10 @@
+C:\Users\Emre\Desktop\GraphProject-master\Çizge\bin\Debug\Çizge.exe.config
+C:\Users\Emre\Desktop\GraphProject-master\Çizge\obj\Debug\Çizge.exe
+C:\Users\Emre\Desktop\GraphProject-master\Çizge\obj\Debug\Çizge.pdb
+C:\Users\Emre\Desktop\GraphProject-master\Çizge\bin\Debug\Çizge.exe
+C:\Users\Emre\Desktop\GraphProject-master\Çizge\bin\Debug\Çizge.pdb
+C:\Users\Emre\Desktop\GraphProject-master\Çizge\obj\Debug\Çizge.Form1.resources
+C:\Users\Emre\Desktop\GraphProject-master\Çizge\obj\Debug\Çizge.Form2.resources
+C:\Users\Emre\Desktop\GraphProject-master\Çizge\obj\Debug\Çizge.Form3.resources
+C:\Users\Emre\Desktop\GraphProject-master\Çizge\obj\Debug\Çizge.Properties.Resources.resources
+C:\Users\Emre\Desktop\GraphProject-master\Çizge\obj\Debug\Cizge.csproj.GenerateResource.Cache
