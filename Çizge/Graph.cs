@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Çizge
+namespace Graph_Project
 {
     public class Graph
     {
@@ -31,7 +31,7 @@ namespace Çizge
                     matris[i, j] = 1000;
         }
 
-        public void ekle(int a, int b, int weight)
+        public void Ekle(int a, int b, int weight)
         {
             matris[a, b] = weight;
             matris[b, a] = weight;
@@ -127,7 +127,7 @@ namespace Çizge
             bool[] visited = new bool[size];
             ArrayList liste = new ArrayList();
 
-            listeEkle(0, liste, visited);
+            ListeEkle(0, liste, visited);
             visited[0] = true;
             for (int x = 1; x < size; x++)
             {
@@ -139,19 +139,19 @@ namespace Çizge
                 if (!visited[birYol.dest] && visited[birYol.source] )
                 {
                     visited[birYol.dest] = true;
-                    listeEkle(birYol.dest, liste, visited);
+                    ListeEkle(birYol.dest, liste, visited);
                 }
                 else if (!visited[birYol.source] && visited[birYol.dest])
                 {
                     visited[birYol.source] = true;
-                    listeEkle(birYol.source, liste, visited);
+                    ListeEkle(birYol.source, liste, visited);
                 }
 
                 tree[birYol.source, birYol.dest] = 1;
             }
         }
         
-        public void listeEkle(int i,ArrayList liste,bool[] visited)
+        public void ListeEkle(int i,ArrayList liste,bool[] visited)
         {
             int a = 0;
             foreach (Edge birYol in yollar)

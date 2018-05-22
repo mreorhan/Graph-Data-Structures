@@ -1,4 +1,4 @@
-﻿namespace Çizge
+﻿namespace Graph_Project
 {
     partial class Form4Kruskal
     {
@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(364, 329);
             this.Name = "Form4Kruskal";
-            this.Text = "Form4Kruskal";
+            this.Text = "Kruskal Algorithm Graph";
             this.Load += new System.EventHandler(this.Form4Kruskal_Load);
             this.ResumeLayout(false);
 

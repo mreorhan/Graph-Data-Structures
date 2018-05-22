@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Çizge.Properties {
+namespace Graph_Project.Properties {
     using System;
     
     

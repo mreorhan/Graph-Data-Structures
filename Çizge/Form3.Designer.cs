@@ -1,4 +1,4 @@
-﻿namespace Çizge
+﻿namespace Graph_Project
 {
     partial class Form3
     {

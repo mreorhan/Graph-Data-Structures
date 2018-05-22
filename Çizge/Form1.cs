@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Çizge
+namespace Graph_Project
 {
     public partial class Form1 : Form
     {
@@ -18,36 +18,36 @@ namespace Çizge
         public Form1()
         {
             InitializeComponent();
-            testEkle();
+            TestEkle();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             groupBox2.Visible = true;
             size = int.Parse(textBox1.Text);
             birGraph = new Graph(size);
         }
 
-        private void testEkle()
+        private void TestEkle()
         {
             birGraph = new Graph(7);
-            birGraph.ekle(0,1,5);
-            birGraph.ekle(0, 2, 7);
-            birGraph.ekle(0, 4, 6);
-            birGraph.ekle(4, 5, 2);
-            birGraph.ekle(1, 3, 8);
-            birGraph.ekle(3, 6, 2);
-            birGraph.ekle(6, 4, 5);
-            birGraph.ekle(0, 6, 7);
-            birGraph.ekle(3, 2, 1);
-            birGraph.ekle(1, 6, 4);
+            birGraph.Ekle(0,1,5);
+            birGraph.Ekle(0, 2, 7);
+            birGraph.Ekle(0, 4, 6);
+            birGraph.Ekle(4, 5, 2);
+            birGraph.Ekle(1, 3, 8);
+            birGraph.Ekle(3, 6, 2);
+            birGraph.Ekle(6, 4, 5);
+            birGraph.Ekle(0, 6, 7);
+            birGraph.Ekle(3, 2, 1);
+            birGraph.Ekle(1, 6, 4);
 
             groupBox2.Visible = true;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
-            birGraph.ekle(int.Parse(textBox2.Text) - 1, int.Parse(textBox3.Text) - 1, int.Parse(textBox4.Text));
+            birGraph.Ekle(int.Parse(textBox2.Text) - 1, int.Parse(textBox3.Text) - 1, int.Parse(textBox4.Text));
 
             textBox2.Clear();
             textBox3.Clear();
@@ -60,7 +60,7 @@ namespace Çizge
             groupBox3.Visible = false;
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void Button4_Click(object sender, EventArgs e)
         {
             int a, b, uzaklık;
 
@@ -84,7 +84,7 @@ namespace Çizge
             groupBox3.Visible = true;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Button3_Click(object sender, EventArgs e)
         {
             int x;
             ArrayList isimSırası = new ArrayList();
@@ -114,7 +114,7 @@ namespace Çizge
 
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void Button5_Click(object sender, EventArgs e)
         {
             groupBox3.Visible = false;
 
@@ -122,12 +122,17 @@ namespace Çizge
             frm2.Show();           
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void Button6_Click(object sender, EventArgs e)
         {
             birGraph.KruskalGraph();
             Form4Kruskal form = new Form4Kruskal(this.birGraph);
 
             form.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

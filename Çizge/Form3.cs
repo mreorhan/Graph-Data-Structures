@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Çizge
+namespace Graph_Project
 {
     public partial class Form3 : Form
     {

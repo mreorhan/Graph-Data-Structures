@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Çizge
+namespace Graph_Project
 {
     class KruskalAlgorithm
     {
@@ -54,9 +54,11 @@ namespace Çizge
 
         public  Graph CreateGraph(int verticesCount, int edgesCoun)
         {
-            Graph graph = new Graph();
-            graph.VerticesCount = verticesCount;
-            graph.EdgesCount = edgesCoun;
+            Graph graph = new Graph
+            {
+                VerticesCount = verticesCount,
+                EdgesCount = edgesCoun
+            };
             graph.edge = new Edge[graph.EdgesCount];
 
             return graph;

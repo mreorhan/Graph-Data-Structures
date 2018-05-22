@@ -1,4 +1,4 @@
-﻿namespace Çizge
+﻿namespace Graph_Project
 {
     partial class Form1
     {
@@ -55,8 +55,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -108,7 +108,7 @@
             this.button4.TabIndex = 10;
             this.button4.Text = "ENTER";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // groupBox3
             // 
@@ -158,7 +158,7 @@
             this.button3.TabIndex = 10;
             this.button3.Text = "ENTER";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // But_MST
             // 
@@ -227,7 +227,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "ENTER";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // label2
             // 
@@ -294,7 +294,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "ENTER";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // textBox1
             // 
@@ -326,16 +326,6 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "MENÜ";
             // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(21, 168);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(143, 28);
-            this.button5.TabIndex = 42;
-            this.button5.Text = "Çizge Çizdirme";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
             // button6
             // 
             this.button6.Location = new System.Drawing.Point(21, 130);
@@ -344,7 +334,17 @@
             this.button6.TabIndex = 43;
             this.button6.Text = "Kruskal Algorithm";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.Click += new System.EventHandler(this.Button6_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(21, 168);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(143, 28);
+            this.button5.TabIndex = 42;
+            this.button5.Text = "Çizge Çizdirme";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
             // Form1
             // 
@@ -357,6 +357,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "GRAPH";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);

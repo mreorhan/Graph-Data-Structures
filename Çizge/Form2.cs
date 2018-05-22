@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Çizge
+namespace Graph_Project
 {
     public partial class Form2 : Form
     {
@@ -24,7 +24,7 @@ namespace Çizge
                 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void Panel1_Paint(object sender, PaintEventArgs e)
         {
             var p = sender as Panel;
             var g = e.Graphics;
