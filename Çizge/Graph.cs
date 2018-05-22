@@ -14,12 +14,17 @@ namespace Çizge
         public int[,] tree;
         public ArrayList yollar;
 
+        private KruskalAlgorithm Kruskal;
+        
+
         public Graph(int size)
         {
             this.size = size;
             yollar = new ArrayList();
             matris = new int[size, size];
             tree = new int[size, size];
+
+            Kruskal = new KruskalAlgorithm(size, size * 2);
 
             for (int i = 0; i < size; i++)
                 for (int j = 0; j < size; j++)
@@ -31,8 +36,16 @@ namespace Çizge
             matris[a, b] = weight;
             matris[b, a] = weight;
 
-            vertexEdge yol = new vertexEdge(a, b, weight);            
+            Kruskal.Add(a, b, weight);
+
+            Edge yol = new Edge(a, b, weight);            
             yollar.Add(yol);
+        }
+
+        public int[,] KruskalGraph()
+        {
+            this.Kruskal.Kruskal();
+            return this.Kruskal.tree;
         }
 
         public int Dijktras(int a, int b)
@@ -116,39 +129,41 @@ namespace Çizge
 
             listeEkle(0, liste, visited);
             visited[0] = true;
-            for(int x = 1; x < size; x++)    
+            for (int x = 1; x < size; x++)
             {
-                vertexEdge birYol = (vertexEdge)liste[0];
+                if (liste == null || liste.Count==0 || liste[0] == null)
+                    continue;
+                Edge birYol = (Edge)liste[0];
                 liste.RemoveAt(0);
 
-                if (!visited[birYol.v2] && visited[birYol.v1] )
+                if (!visited[birYol.dest] && visited[birYol.source] )
                 {
-                    visited[birYol.v2] = true;
-                    listeEkle(birYol.v2, liste, visited);
+                    visited[birYol.dest] = true;
+                    listeEkle(birYol.dest, liste, visited);
                 }
-                else if (!visited[birYol.v1] && visited[birYol.v2])
+                else if (!visited[birYol.source] && visited[birYol.dest])
                 {
-                    visited[birYol.v1] = true;
-                    listeEkle(birYol.v1, liste, visited);
+                    visited[birYol.source] = true;
+                    listeEkle(birYol.source, liste, visited);
                 }
 
-                tree[birYol.v1, birYol.v2] = 1;
+                tree[birYol.source, birYol.dest] = 1;
             }
         }
         
         public void listeEkle(int i,ArrayList liste,bool[] visited)
         {
             int a = 0;
-            foreach (vertexEdge birYol in yollar)
-                if ((birYol.v1 == i || birYol.v2 == i) && (visited[birYol.v1]==false || visited[birYol.v2]==false)) 
+            foreach (Edge birYol in yollar)
+                if ((birYol.source == i || birYol.dest == i) && (visited[birYol.source]==false || visited[birYol.dest]==false)) 
                 {
                     if (liste.Count == 0)
                         liste.Add(birYol);
                     else
                     {
-                        foreach (vertexEdge yol in liste)
+                        for (int j=0;j<liste.Count;j++)
                         {
-                            if (birYol.e < yol.e)
+                            if (birYol.weight <((Edge)liste[j]).weight)
                             {
                                 liste.Insert(a, birYol);
                                 break;
@@ -160,5 +175,8 @@ namespace Çizge
                     }
                 }
         }
+
+       
+        
     }
 }
