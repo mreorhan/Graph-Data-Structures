@@ -42,6 +42,8 @@ namespace Graph_Project
             yollar.Add(yol);
         }
 
+       
+
         public int[,] KruskalGraph()
         {
             this.Kruskal.Kruskal();
@@ -118,7 +120,7 @@ namespace Graph_Project
                                         visited[y, n] = true;
                                 }
                     }
-
+            
             return isimSırası;
         }
 
