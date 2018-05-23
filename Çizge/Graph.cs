@@ -41,7 +41,7 @@ namespace Graph_Project
             Edge yol = new Edge(a, b, weight);            
             yollar.Add(yol);
         }
-        
+
         public int[,] KruskalGraph()
         {
             this.Kruskal.Kruskal();

@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Çizge
+namespace Graph_Project
 {
     public class Person
     {
         public string Name { get; set; }
         public string Job { get; set; }
+        public int Value { get; set; }
     }
 }

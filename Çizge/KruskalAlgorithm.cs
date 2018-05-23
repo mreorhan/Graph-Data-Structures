@@ -14,6 +14,7 @@ namespace Graph_Project
         public int[,] tree;
         Graph graph;
 
+
         public KruskalAlgorithm(int verticesCount,int edgesCount)
         {
             this.verticesCount = verticesCount;
@@ -51,7 +52,7 @@ namespace Graph_Project
             public int Rank;
         }
 
-        public Graph CreateGraph(int verticesCount, int edgesCoun)
+        public  Graph CreateGraph(int verticesCount, int edgesCoun)
         {
             Graph graph = new Graph
             {
@@ -63,7 +64,7 @@ namespace Graph_Project
             return graph;
         }
 
-        private int Find(Subset[] subsets, int i)
+        private  int Find(Subset[] subsets, int i)
         {
             if (subsets[i].Parent != i)
                 subsets[i].Parent = Find(subsets, subsets[i].Parent);
@@ -71,7 +72,7 @@ namespace Graph_Project
             return subsets[i].Parent;
         }
 
-        public void Union(Subset[] subsets, int x, int y)
+        public  void Union(Subset[] subsets, int x, int y)
         {
             int xroot = Find(subsets, x);
             int yroot = Find(subsets, y);
@@ -87,14 +88,14 @@ namespace Graph_Project
             }
         }
 
-        public void Print(Edge[] result, int e)
+        public  void Print(Edge[] result, int e)
         {
             tree = new int[verticesCount, verticesCount];
             for (int i = 0; i < e; ++i)
                 tree[result[i].Source, result[i].Destination]= 1;
         }
 
-        public void Kruskal()
+        public  void Kruskal()
         {
             int verticesCount = graph.VerticesCount;
             Edge[] result = new Edge[verticesCount];

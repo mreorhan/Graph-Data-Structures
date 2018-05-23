@@ -55,8 +55,10 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.btnSocialNetwork = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -70,11 +72,11 @@
             this.groupBox4.Controls.Add(this.textBox6);
             this.groupBox4.Controls.Add(this.textBox7);
             this.groupBox4.Controls.Add(this.button4);
-            this.groupBox4.Location = new System.Drawing.Point(607, 228);
+            this.groupBox4.Location = new System.Drawing.Point(628, 221);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox4.Size = new System.Drawing.Size(256, 127);
+            this.groupBox4.Size = new System.Drawing.Size(463, 134);
             this.groupBox4.TabIndex = 38;
             this.groupBox4.TabStop = false;
             this.groupBox4.Visible = false;
@@ -107,7 +109,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(121, 64);
+            this.button4.Location = new System.Drawing.Point(105, 57);
             this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(100, 28);
@@ -122,11 +124,11 @@
             this.groupBox3.Controls.Add(this.listBox1);
             this.groupBox3.Controls.Add(this.textBox5);
             this.groupBox3.Controls.Add(this.button3);
-            this.groupBox3.Location = new System.Drawing.Point(607, 15);
+            this.groupBox3.Location = new System.Drawing.Point(628, 19);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox3.Size = new System.Drawing.Size(463, 202);
+            this.groupBox3.Size = new System.Drawing.Size(463, 194);
             this.groupBox3.TabIndex = 37;
             this.groupBox3.TabStop = false;
             this.groupBox3.Visible = false;
@@ -134,7 +136,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(39, 65);
+            this.label8.Location = new System.Drawing.Point(17, 20);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(158, 17);
@@ -146,16 +148,16 @@
             this.listBox1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(238, 14);
+            this.listBox1.Location = new System.Drawing.Point(231, 14);
             this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(217, 180);
+            this.listBox1.Size = new System.Drawing.Size(217, 164);
             this.listBox1.TabIndex = 21;
             this.listBox1.Visible = false;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(42, 102);
+            this.textBox5.Location = new System.Drawing.Point(21, 47);
             this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(55, 22);
@@ -163,7 +165,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(102, 99);
+            this.button3.Location = new System.Drawing.Point(99, 47);
             this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 28);
@@ -174,7 +176,7 @@
             // 
             // But_MST
             // 
-            this.But_MST.Location = new System.Drawing.Point(38, 140);
+            this.But_MST.Location = new System.Drawing.Point(38, 130);
             this.But_MST.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.But_MST.Name = "But_MST";
             this.But_MST.Size = new System.Drawing.Size(191, 37);
@@ -185,7 +187,7 @@
             // 
             // But_BFS
             // 
-            this.But_BFS.Location = new System.Drawing.Point(38, 90);
+            this.But_BFS.Location = new System.Drawing.Point(38, 80);
             this.But_BFS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.But_BFS.Name = "But_BFS";
             this.But_BFS.Size = new System.Drawing.Size(191, 37);
@@ -196,7 +198,7 @@
             // 
             // But_SP
             // 
-            this.But_SP.Location = new System.Drawing.Point(38, 40);
+            this.But_SP.Location = new System.Drawing.Point(38, 30);
             this.But_SP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.But_SP.Name = "But_SP";
             this.But_SP.Size = new System.Drawing.Size(191, 37);
@@ -229,7 +231,7 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Location = new System.Drawing.Point(29, 65);
+            this.groupBox2.Location = new System.Drawing.Point(37, 69);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -240,7 +242,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(137, 220);
+            this.button2.Location = new System.Drawing.Point(105, 210);
             this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 28);
@@ -315,7 +317,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(174, 25);
+            this.button1.Location = new System.Drawing.Point(156, 33);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 28);
@@ -326,16 +328,16 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(108, 28);
+            this.textBox1.Location = new System.Drawing.Point(95, 36);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(52, 22);
+            this.textBox1.Size = new System.Drawing.Size(43, 22);
             this.textBox1.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(39, 31);
+            this.label1.Location = new System.Drawing.Point(33, 39);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 17);
@@ -344,23 +346,35 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.btnSocialNetwork);
             this.groupBox5.Controls.Add(this.button6);
             this.groupBox5.Controls.Add(this.button5);
             this.groupBox5.Controls.Add(this.But_BFS);
             this.groupBox5.Controls.Add(this.But_SP);
             this.groupBox5.Controls.Add(this.But_MST);
-            this.groupBox5.Location = new System.Drawing.Point(332, 15);
+            this.groupBox5.Location = new System.Drawing.Point(344, 19);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox5.Size = new System.Drawing.Size(267, 340);
+            this.groupBox5.Size = new System.Drawing.Size(267, 336);
             this.groupBox5.TabIndex = 40;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "MENÜ";
             // 
+            // btnSocialNetwork
+            // 
+            this.btnSocialNetwork.Location = new System.Drawing.Point(38, 230);
+            this.btnSocialNetwork.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSocialNetwork.Name = "btnSocialNetwork";
+            this.btnSocialNetwork.Size = new System.Drawing.Size(191, 34);
+            this.btnSocialNetwork.TabIndex = 44;
+            this.btnSocialNetwork.Text = "Sosyal Ağ";
+            this.btnSocialNetwork.UseVisualStyleBackColor = true;
+            this.btnSocialNetwork.Click += new System.EventHandler(this.btnSocialNetwork_Click);
+            // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(38, 190);
+            this.button6.Location = new System.Drawing.Point(38, 180);
             this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(191, 37);
@@ -371,7 +385,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(38, 240);
+            this.button5.Location = new System.Drawing.Point(38, 278);
             this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(191, 34);
@@ -380,12 +394,25 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.ForeColor = System.Drawing.Color.Red;
+            this.label6.Location = new System.Drawing.Point(12, 391);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(871, 19);
+            this.label6.TabIndex = 41;
+            this.label6.Text = "Not: Test edebilmek için method yazılmıştır. Test kodunu devre dışı bırakmak için" +
+    " yukarıdan değer girebilirsiniz";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1085, 382);
+            this.ClientSize = new System.Drawing.Size(1111, 437);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -393,6 +420,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "GRAPH";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -403,6 +431,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -437,6 +466,8 @@
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnSocialNetwork;
+        private System.Windows.Forms.Label label6;
     }
 }
 

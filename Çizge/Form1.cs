@@ -14,11 +14,20 @@ namespace Graph_Project
     {
         int size;
         public Graph birGraph;
-        
+        public SocialNetwork social { get; set; }
+        public Test Test { get; set; }
+
         public Form1()
         {
             InitializeComponent();
-            TestEkle();
+            Test = new Test();
+            Test.TestEkleGraph();
+            Test.TestEkleSocialNetwork();
+
+            birGraph = Test.graph;
+            social = Test.social;
+
+            groupBox2.Visible = true;
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -26,23 +35,6 @@ namespace Graph_Project
             groupBox2.Visible = true;
             size = int.Parse(textBox1.Text);
             birGraph = new Graph(size);
-        }
-
-        private void TestEkle()
-        {
-            birGraph = new Graph(7);
-            birGraph.Ekle(0,1,5);
-            birGraph.Ekle(0, 2, 7);
-            birGraph.Ekle(0, 4, 6);
-            birGraph.Ekle(4, 5, 2);
-            birGraph.Ekle(1, 3, 8);
-            birGraph.Ekle(3, 6, 2);
-            birGraph.Ekle(6, 4, 5);
-            birGraph.Ekle(0, 6, 7);
-            birGraph.Ekle(3, 2, 1);
-            birGraph.Ekle(1, 6, 4);
-
-            groupBox2.Visible = true;
         }
 
         private void Button2_Click(object sender, EventArgs e)
@@ -74,14 +66,17 @@ namespace Graph_Project
             else
                 MessageBox.Show("Köşe çifti arasında bir yol yok!! ");
 
+            
             textBox7.Clear();
             textBox6.Clear();
             groupBox4.Visible = false;
+            
         }
 
         private void But_BFS_Click(object sender, EventArgs e)
         {
             groupBox3.Visible = true;
+            groupBox4.Visible = false;
         }
 
         private void Button3_Click(object sender, EventArgs e)
@@ -127,6 +122,17 @@ namespace Graph_Project
             birGraph.KruskalGraph();
             Form4Kruskal form = new Form4Kruskal(this.birGraph);
 
+            form.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSocialNetwork_Click(object sender, EventArgs e)
+        {
+            SocialNetworkForm form = new SocialNetworkForm(social);
             form.Show();
         }
     }
