@@ -10,3 +10,15 @@ C:\Users\Oğuzhan\Documents\GitHub\Graph-Data-Structures\Çizge\obj\Debug\Graph_
 C:\Users\Oğuzhan\Documents\GitHub\Graph-Data-Structures\Çizge\obj\Debug\Graph_Project.Form1.resources
 C:\Users\Oğuzhan\Documents\GitHub\Graph-Data-Structures\Çizge\obj\Debug\Graph_Project.Form3.resources
 C:\Users\Oğuzhan\Documents\GitHub\Graph-Data-Structures\Çizge\obj\Debug\Graph_Project.Form4Kruskal.resources
+C:\Users\Emre\Documents\GitHub\Graph-Data-Structures\Çizge\bin\Debug\Çizge.exe.config
+C:\Users\Emre\Documents\GitHub\Graph-Data-Structures\Çizge\obj\Debug\Çizge.exe
+C:\Users\Emre\Documents\GitHub\Graph-Data-Structures\Çizge\obj\Debug\Çizge.pdb
+C:\Users\Emre\Documents\GitHub\Graph-Data-Structures\Çizge\bin\Debug\Çizge.exe
+C:\Users\Emre\Documents\GitHub\Graph-Data-Structures\Çizge\bin\Debug\Çizge.pdb
+C:\Users\Emre\Documents\GitHub\Graph-Data-Structures\Çizge\obj\Debug\Graph Project.csprojResolveAssemblyReference.cache
+C:\Users\Emre\Documents\GitHub\Graph-Data-Structures\Çizge\obj\Debug\Graph_Project.Form1.resources
+C:\Users\Emre\Documents\GitHub\Graph-Data-Structures\Çizge\obj\Debug\Graph_Project.Form2.resources
+C:\Users\Emre\Documents\GitHub\Graph-Data-Structures\Çizge\obj\Debug\Graph_Project.Form3.resources
+C:\Users\Emre\Documents\GitHub\Graph-Data-Structures\Çizge\obj\Debug\Graph_Project.Form4Kruskal.resources
+C:\Users\Emre\Documents\GitHub\Graph-Data-Structures\Çizge\obj\Debug\Çizge.Properties.Resources.resources
+C:\Users\Emre\Documents\GitHub\Graph-Data-Structures\Çizge\obj\Debug\Graph Project.csproj.GenerateResource.Cache
